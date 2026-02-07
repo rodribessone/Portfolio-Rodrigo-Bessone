@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-export default function Header() {
+export default function Header({ t, language, toggleLanguage }) {
   // Controla si el nav está visible u oculto al hacer scroll
   const [show, setShow] = useState(true);
   const prevScrollY = useRef(0);
@@ -46,69 +46,85 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo o Nombre (opcional) */}
-        <div className="text-[#899388] text-xl font-bold">
+        <div className="text-[#899388] text-xl font-bold flex items-center gap-4">
           <a href="#inicio">
             <img src='/logo.png' className='h-10' />
           </a>
         </div>
 
         {/* Menú desktop */}
-        <ul className="hidden md:flex text-xl space-x-12">
+        <ul className="hidden md:flex text-xl space-x-12 items-center">
           <li className="transform transition-transform duration-300 hover:scale-110">
             <a href="#inicio" className="text-[#899388]">
-              INICIO
+              {t.inicio}
             </a>
           </li>
           <li className="transform transition-transform duration-300 hover:scale-110">
             <a href="#proyectos" className="text-[#899388]">
-              PROYECTOS
+              {t.proyectos}
             </a>
           </li>
           <li className="transform transition-transform duration-300 hover:scale-110">
             <a href="#skills" className="text-[#899388]">
-              SKILLS
+              {t.skills}
             </a>
           </li>
           <li className="transform transition-transform duration-300 hover:scale-110">
             <a href="#contacto" className="text-[#899388]">
-              CONTACTO
+              {t.contacto}
             </a>
+          </li>
+          <li>
+            <button 
+              onClick={toggleLanguage}
+              className="px-3 py-1 border border-[#899388] text-[#899388] rounded hover:bg-[#899388] hover:text-black transition-colors text-sm font-bold"
+            >
+              {language === 'es' ? 'EN' : 'ES'}
+            </button>
           </li>
         </ul>
 
         {/* Botón hamburguesa (solo visible en mobile) */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden text-[#899388] focus:outline-none"
-        >
-          {isOpen ? (
-            /* Ícono de cerrar */
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
-                d="M6 18L18 6M6 6l12 12" 
-              />
-            </svg>
-          ) : (
-            /* Ícono de menú */
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
-                d="M4 6h16M4 12h16M4 18h16" 
-              />
-            </svg>
-          )}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <button 
+            onClick={toggleLanguage}
+            className="px-2 py-1 border border-[#899388] text-[#899388] rounded hover:bg-[#899388] hover:text-black transition-colors text-xs font-bold"
+          >
+            {language === 'es' ? 'EN' : 'ES'}
+          </button>
+          <button
+            onClick={toggleMenu}
+            className="text-[#899388] focus:outline-none"
+          >
+            {isOpen ? (
+              /* Ícono de cerrar */
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
+                  d="M6 18L18 6M6 6l12 12" 
+                />
+              </svg>
+            ) : (
+              /* Ícono de menú */
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
+                  d="M4 6h16M4 12h16M4 18h16" 
+                />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Menú desplegable mobile */}
@@ -116,22 +132,22 @@ export default function Header() {
         <ul className="md:hidden flex flex-col items-center mt-2 space-y-2">
           <li className="text-[#899388] text-lg hover:scale-105 transition-transform">
             <a href="#inicio" onClick={closeMenu}>
-              INICIO
+              {t.inicio}
             </a>
           </li>
           <li className="text-[#899388] text-lg hover:scale-105 transition-transform">
             <a href="#proyectos" onClick={closeMenu}>
-              PROYECTOS
+              {t.proyectos}
             </a>
           </li>
           <li className="text-[#899388] text-lg hover:scale-105 transition-transform">
             <a href="#skills" onClick={closeMenu}>
-              SKILLS
+              {t.skills}
             </a>
           </li>
           <li className="text-[#899388] text-lg hover:scale-105 transition-transform">
             <a href="#contacto" onClick={closeMenu}>
-              CONTACTO
+              {t.contacto}
             </a>
           </li>
         </ul>

@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import proyectos from '../../data/Proyectos.json';
+import { translations } from '../../data/translations';
 
-export default function Proyectos() {
+export default function Proyectos({ language }) {
+  const t = translations[language].proyectos;
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -83,7 +85,7 @@ export default function Proyectos() {
                   rel="noopener noreferrer"
                   className="px-2 py-1 border border-[#abb7aa] text-[#abb7aa] rounded transition-colors hover:bg-[#abb7aa] hover:text-black"
                 >
-                  Ver Proyecto
+                  {t.verProyecto}
                 </a>
                 <a
                   href={proyecto.code}
@@ -91,7 +93,7 @@ export default function Proyectos() {
                   rel="noopener noreferrer"
                   className="px-2 py-1 border border-[#abb7aa] text-[#abb7aa] rounded transition-colors hover:bg-[#abb7aa] hover:text-black"
                 >
-                  Ver Código
+                  {t.verCodigo}
                 </a>
               </p>
               <div className="flex flex-wrap items-center justify-center gap-2">
@@ -116,11 +118,9 @@ export default function Proyectos() {
 
       {/* Texto descriptivo */}
       <div className="md:w-1/2 flex flex-col justify-center text-center space-y-4 mt-6 md:mt-0">
-        <h1 className="text-6xl font-bold text-[#899388]">Proyectos destacados</h1>
+        <h1 className="text-6xl font-bold text-[#899388]">{t.titulo}</h1>
         <p className="text-xl text-white max-w-md mx-auto">
-          Mi enfoque de diseño prioriza las necesidades y preferencias de los usuarios.
-          Me concentro en crear productos que mejoren la experiencia del usuario,
-          asegurándome de que sean funcionales y agradables de usar.
+          {t.descripcion}
         </p>
       </div>
     </section>

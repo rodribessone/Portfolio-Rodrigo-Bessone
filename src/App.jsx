@@ -5,12 +5,19 @@ import Skills from './components/Skills/Skills'
 import Contacto from './components/Contacto/Contacto'
 import Header from "./components/Header/Header"
 import ReactGA from "react-ga4"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { translations } from './data/translations'
 
 ReactGA.initialize("G-04YSTZ9G0M")
 
 
 function App() {
+  const [language, setLanguage] = useState('es');
+  const t = translations[language];
+
+  const toggleLanguage = () => {
+    setLanguage(prev => prev === 'es' ? 'en' : 'es');
+  };
 
   useEffect(() => {
     ReactGA.send("pageview");
@@ -18,19 +25,19 @@ function App() {
 
   return (
     <div className='w-full flex flex-col relative '>
-      <Header />
+      <Header t={t.nav} language={language} toggleLanguage={toggleLanguage} />
       {/* Envolver cada sección con un div que tenga el id correspondiente */}
       <div id="inicio">
-        <Inicio />
+        <Inicio t={t.inicio} />
       </div>
       <div id="proyectos">
-        <Proyectos />
+        <Proyectos language={language} />
       </div>
       <div id="skills">
-        <Skills />
+        <Skills language={language} />
       </div>
       <div id="contacto">
-        <Contacto />
+        <Contacto t={t.contacto} />
       </div>
     </div>
   )

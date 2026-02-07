@@ -3,21 +3,21 @@ import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import CopiarCorreo from './CopiarMail';
 
-export default function Contacto() {
+export default function Contacto({ t }) {
   return (
     <div className="relative min-h-screen flex flex-col bg-gradient-to-b from-black to-gray-900 pt-10 px-6 sm:px-10 text-white">
       <h1 className="text-4xl sm:text-6xl font-bold text-[#899388] text-center mb-8">
-        Contacto
+        {t.titulo}
       </h1>
       <div className="flex flex-col md:flex-row flex-grow gap-8">
         {/* Sección de redes y contacto */}
         <div className="md:w-1/2 flex flex-col justify-center space-y-6">
           <h2 className="text-2xl sm:text-4xl text-center text-[#899388]">
-            MIS REDES
+            {t.redes}
           </h2>
           <div className="flex justify-center gap-6">
             <a
-              href="https://github.com/tuUsuario"
+              href="https://github.com/rodribessone"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors"
@@ -25,7 +25,7 @@ export default function Contacto() {
               <FontAwesomeIcon icon={faSquareGithub} className="text-4xl sm:text-6xl" />
             </a>
             <a
-              href="https://linkedin.com/in/tuPerfil"
+              href="https://www.linkedin.com/in/rodrigo-bessone/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors"
@@ -56,7 +56,7 @@ export default function Contacto() {
                   className="absolute bottom-full mb-2 px-2 py-1 text-sm bg-gray-700 rounded opacity-0 transition-opacity duration-200"
                   style={{ whiteSpace: "nowrap" }}
                 >
-                  Enviar email
+                  {t.emailTooltip}
                 </div>
                 <CopiarCorreo />
               </div>
@@ -71,8 +71,8 @@ export default function Contacto() {
       </div>
       {/* Footer */}
       <div className="flex flex-col sm:flex-row justify-between items-center mt-8 px-4">
-        <p className="text-sm">&copy; 2025</p>
-        <a className="text-sm cursor-pointer hover:underline">Code by Rodri</a>
+        <p className="text-sm">&copy; 2026</p>
+        <a className="text-sm cursor-pointer hover:underline">{t.footer}</a>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-export default function Inicio() {
+export default function Inicio({ t }) {
   return (
     <section className="h-[100vh] relative">
       {/* Imagen de fondo */}
@@ -13,9 +13,9 @@ export default function Inicio() {
           <div className="flex justify-between mx-6">
             <h1 className="text-9xl font-bold text-[#899388]">RODRIGO</h1>
             <div>
-              <p className="text-xl text-[#777777]">Desarrollador Full-Stack.</p>
+              <p className="text-xl text-[#777777]">{t.rol}</p>
               <p className="text-xl text-[#777777]">
-                Amante de la programación y el desarrollo web.
+                {t.descripcion}
               </p>
             </div>
           </div>
@@ -28,8 +28,8 @@ export default function Inicio() {
       {/* Versión para pantallas chicas (< md) */}
       <div className="md:hidden absolute bottom-0 left-0 w-full p-4 flex flex-col items-center justify-center space-y-2 text-center">
         <h1 className="text-5xl font-bold text-[#899388]">RODRIGO BESSONE</h1>
-        <p className="text-lg text-[#777777]">Desarrollador Full-Stack</p>
-        <p className="text-lg text-[#777777]">Amante de la programación y el desarrollo web</p>
+        <p className="text-lg text-[#777777]">{t.rol}</p>
+        <p className="text-lg text-[#777777]">{t.descripcion}</p>
       </div>
     </section>
   );
