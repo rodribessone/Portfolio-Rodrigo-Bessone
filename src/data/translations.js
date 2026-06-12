@@ -19,7 +19,7 @@ export const translations = {
     skills: {
       titulo: "Sobre Mí",
       p1: "Hola! Soy <span class=\"font-bold\">Rodrigo Bessone</span>, un desarrollador web autodidacta con pasión por la programación.",
-      p2: "He desarrollado aplicaciones como un <span class=\"font-semibold\">e-commerce</span>, una web para <span class=\"font-semibold\">ventas de comida rápida</span> y un <span class=\"font-semibold\">juego de fantasía</span>. Uso tecnologías como <span class=\"text-[#f7df1e]\">JavaScript</span>, <span class=\"text-[#61dafb]\">React</span>, <span class=\"text-[#38b2ac]\">Tailwind CSS</span>, <span class=\"text-[#3eaf7c]\">Node.js</span> y <span class=\"text-[#47a248]\">MongoDB</span>.",
+      p2: "He desarrollado aplicaciones como un <span class=\"font-semibold\">sistema de turnos online</span> en producción para un negocio real, una <span class=\"font-semibold\">app de pronóstico de olas para surf</span>, un <span class=\"font-semibold\">e-commerce</span> y una <span class=\"font-semibold\">plataforma de conexión laboral</span>. Uso tecnologías como <span class=\"text-[#f7df1e]\">JavaScript</span>, <span class=\"text-[#61dafb]\">React</span>, <span class=\"text-[#38b2ac]\">Tailwind CSS</span>, <span class=\"text-[#3eaf7c]\">Node.js</span>, <span class=\"text-[#47a248]\">MongoDB</span> y <span class=\"text-[#3776ab]\">Python</span>.",
       p3: "Siempre busco aprender más y mejorar mis habilidades para crear soluciones innovadoras y efectivas.",
     },
     contacto: {
@@ -49,7 +49,7 @@ export const translations = {
     skills: {
       titulo: "About Me",
       p1: "Hi! I'm <span class=\"font-bold\">Rodrigo Bessone</span>, a self-taught web developer with a passion for programming.",
-      p2: "I have developed applications such as an <span class=\"font-semibold\">e-commerce</span>, a fast-food sales website, and a <span class=\"font-semibold\">fantasy game</span>. I use technologies like <span class=\"text-[#f7df1e]\">JavaScript</span>, <span class=\"text-[#61dafb]\">React</span>, <span class=\"text-[#38b2ac]\">Tailwind CSS</span>, <span class=\"text-[#3eaf7c]\">Node.js</span>, and <span class=\"text-[#47a248]\">MongoDB</span>.",
+      p2: "I have developed applications such as an <span class=\"font-semibold\">online booking system</span> in production for a real business, a <span class=\"font-semibold\">surf wave forecast app</span>, an <span class=\"font-semibold\">e-commerce</span>, and a <span class=\"font-semibold\">job-matching platform</span>. I use technologies like <span class=\"text-[#f7df1e]\">JavaScript</span>, <span class=\"text-[#61dafb]\">React</span>, <span class=\"text-[#38b2ac]\">Tailwind CSS</span>, <span class=\"text-[#3eaf7c]\">Node.js</span>, <span class=\"text-[#47a248]\">MongoDB</span>, and <span class=\"text-[#3776ab]\">Python</span>.",
       p3: "I always seek to learn more and improve my skills to create innovative and effective solutions.",
     },
     contacto: {

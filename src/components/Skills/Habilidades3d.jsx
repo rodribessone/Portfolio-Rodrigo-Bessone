@@ -75,6 +75,12 @@ const Habilidades3D = () => {
               <span className="text-sm text-white">Node.js</span>
             </a>
           </li>
+          <li>
+            <a href="#" className="flex flex-col items-center">
+              <img src="/icons/python-icon.png" alt="Python" className="w-10 h-10 mb-1" />
+              <span className="text-sm text-white">Python</span>
+            </a>
+          </li>
         </ul>
       </div>
 

@@ -4,7 +4,7 @@ export default function Inicio({ t }) {
       {/* Imagen de fondo */}
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: "url('/images/RodriInicio.png')" }}
+        style={{ backgroundImage: "url('/images/RodriInicio.webp')" }}
       ></div>
 
       {/* Versión para pantallas grandes (>= md) */}

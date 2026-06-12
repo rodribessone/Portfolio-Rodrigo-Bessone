@@ -1,4 +1,29 @@
-[   
+[
+    {
+      "title": "Chicken Joe",
+      "languages": [
+        { "name": "react", "icon": "react-icon.png" },
+        { "name": "python", "icon": "python-icon.png" },
+        { "name": "tailwind-css", "icon": "tailwind-css-icon.png" }
+      ],
+      "image": "/images/ChickenJoe.webp",
+      "link": "https://chicken-joe.vercel.app/",
+      "code": "https://github.com/rodribessone/chicken-joe",
+      "description": "App de pronóstico de olas para surf. Analiza datos marinos en tiempo real (oleaje, viento, mareas) y puntúa las condiciones de cada playa para saber cuándo y dónde surfear. Frontend React PWA y backend en Python."
+    },
+    {
+      "title": "Peluquería M&O",
+      "languages": [
+        { "name": "react", "icon": "react-icon.png" },
+        { "name": "node-js", "icon": "node-js-icon.png" },
+        { "name": "mongodb", "icon": "mongodb-icon.png" },
+        { "name": "tailwind-css", "icon": "tailwind-css-icon.png" }
+      ],
+      "image": "/images/PeluqueriaMO.webp",
+      "link": "https://peluqueria-mo-4v3h.vercel.app/",
+      "code": "https://github.com/rodribessone/peluqueria-mo",
+      "description": "Sistema de turnos online para una peluquería real, en producción. Reserva de turnos en 3 pasos, panel de administración con JWT, confirmación por WhatsApp, tienda de productos y probador de looks con IA."
+    },
     {
       "title": "IWork",
       "languages": [
@@ -7,7 +32,7 @@
         { "name": "mongodb", "icon": "mongodb-icon.png" },
         { "name": "tailwind-css", "icon": "tailwind-css-icon.png" }
       ],
-      "image": "/images/IWork.png",
+      "image": "/images/IWork.webp",
       "link": "https://iwork-project.netlify.app/",
       "code": "https://github.com/rodribessone/IWork",
       "description": "Plataforma Full Stack de conexión laboral para oficios en Australia. Incluye chat en tiempo real (Socket.io), autenticación JWT, subida de imágenes Cloudinary y sistema de postulaciones."
@@ -18,23 +43,23 @@
         { "name": "react", "icon": "react-icon.png" },
         { "name": "node-js", "icon": "node-js-icon.png" },
         { "name": "tailwind-css", "icon": "tailwind-css-icon.png" },
-        { "name": "mongodb", "icon": "mongodb-icon.png" } 
+        { "name": "mongodb", "icon": "mongodb-icon.png" }
       ],
-      "image": "/images/LeFiu.png",
+      "image": "/images/LeFiu.webp",
       "link": "https://le-fiu.vercel.app/",
       "code": "https://github.com/rodribessone/LeFiu",
       "description": "Una tienda en línea con sistema de carrito de compras y filtros dinámicos."
     },
     {
-        "title": "Dragon Blame",
-        "languages": [
+      "title": "Dragon Blame",
+      "languages": [
         { "name": "html", "icon": "html-icon.png" },
         { "name": "css", "icon": "css-icon.png" },
         { "name": "javascript", "icon": "js-icon.png" }
       ],
-        "image": "/images/DragonBlame.png",
-        "link": "https://rodribessone.github.io/Dragon-Blame/",
-        "code": "https://github.com/rodribessone/Dragon-Blame",
-        "description": "Juego interactivo desarrollado en colaboración. Ambientado en un mundo fantástico, el jugador mejora sus armas y habilidades mientras explora ubicaciones y enfrenta monstruos. Lógica 100% JavaScript Vanilla."
-      }
+      "image": "/images/DragonBlame.webp",
+      "link": "https://rodribessone.github.io/Dragon-Blame/",
+      "code": "https://github.com/rodribessone/Dragon-Blame",
+      "description": "Juego interactivo desarrollado en colaboración. Ambientado en un mundo fantástico, el jugador mejora sus armas y habilidades mientras explora ubicaciones y enfrenta monstruos. Lógica 100% JavaScript Vanilla."
+    }
 ]
