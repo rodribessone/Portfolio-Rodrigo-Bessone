@@ -51,7 +51,7 @@ export default function Proyectos({ language }) {
   }, []);
 
   return (
-    <section className="sticky top-0 h-screen flex flex-col md:flex-row bg-gradient-to-b from-black to-gray-900 p-10">
+    <section className="sticky top-0 min-h-screen md:min-h-0 md:h-screen flex flex-col md:flex-row bg-gradient-to-b from-black to-gray-900 p-10">
       {/* Contenedor de proyectos */}
       <div className="md:w-1/2 relative overflow-hidden rounded-lg shadow-lg min-h-[480px]">
         <div
